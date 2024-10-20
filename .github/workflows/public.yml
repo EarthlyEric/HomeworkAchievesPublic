@@ -10,7 +10,7 @@
        - name: clone submodule
          uses: actions/checkout@v2
          with:
-           repository: EarthlyEric/HomeworkAchieves:ml-hw
+           repository: EarthlyEric/HomeworkAchieves/ml-hw
            path: path
            ssh-key: ${{ secrets.SSH_KEY }}
            persist-credentials: true
