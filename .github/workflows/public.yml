@@ -1,0 +1,13 @@
+  steps:
+   - name: clone submodule
+     uses: actions/checkout@v2:ml-hw
+     with:
+       repository: EarthlyEric/HomeworkAchieves
+       path: path
+       ssh-key: ${{ secrets.SSH_KEY }}
+       persist-credentials: true
+
+   - name: checkout submodule
+     run: |
+       git submodule init
+       git submodule update
