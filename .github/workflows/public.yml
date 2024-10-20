@@ -11,7 +11,8 @@
          uses: actions/checkout@v2
          with:
            repository: EarthlyEric/HomeworkAchieves/ml-hw
-           path: path
+           ref: ml-hw
+           path: /ml-hw
            ssh-key: ${{ secrets.SSH_KEY }}
            persist-credentials: true
   
