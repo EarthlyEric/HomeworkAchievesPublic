@@ -8,7 +8,6 @@ average = {}
 useColumns = ['danceability', 'acousticness', 'duration_ms', 'energy', 'instrumentalness', 'key', 'liveness', 'loudness', 'mode', 'speechiness', 'tempo', 'valence']
 for column in useColumns:
     average[column] = np.mean(dataset[column])
-
 print("平均適合跳舞程度: ", average['danceability'])
 print("平均聲學性: ", average['acousticness'])
 print("平均歌曲時長: ",  f"{int(average['duration_ms'] / 1000 // 60)} 分 {int(average['duration_ms'] / 1000 % 60)} 秒")
